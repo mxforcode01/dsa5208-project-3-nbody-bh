@@ -1,0 +1,7 @@
+tests 1543302.stdct-mgmt-02
+e8 n=1 1543303.stdct-mgmt-02
+e8 n=4 1543304.stdct-mgmt-02
+e9 n=4 1543305.stdct-mgmt-02
+e10 n=4 1543306.stdct-mgmt-02
+e11 n=1 1543307.stdct-mgmt-02
+e11 n=4 1543308.stdct-mgmt-02

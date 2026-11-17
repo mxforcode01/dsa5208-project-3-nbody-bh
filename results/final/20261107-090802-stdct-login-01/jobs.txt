@@ -1,0 +1,10 @@
+tests 1528293.stdct-mgmt-02
+e5b n=1 1528294.stdct-mgmt-02
+e5b n=2 1528295.stdct-mgmt-02
+e5b n=4 1528296.stdct-mgmt-02
+e7b n=1 1528297.stdct-mgmt-02
+e7b n=2 1528298.stdct-mgmt-02
+e7b n=4 1528299.stdct-mgmt-02
+e7c n=1 1528300.stdct-mgmt-02
+e7c n=2 1528301.stdct-mgmt-02
+e7c n=4 1528302.stdct-mgmt-02

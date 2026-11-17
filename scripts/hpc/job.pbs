@@ -1,0 +1,17 @@
+#!/bin/bash -l
+# PBS wrapper for one experiment (EXP) on NODES nodes. Submitted by run_all.sh, which passes
+# NB_RUN_DIR, EXP and NODES with `qsub -v` and requests the nodes; not meant to be run by hand.
+set -u
+# shellcheck disable=SC1091
+. "$NB_RUN_DIR/run_env.sh"
+# shellcheck disable=SC1091
+. "$NB_ROOT/scripts/hpc/lib.sh"
+# shellcheck disable=SC1091
+. "$NB_ROOT/scripts/hpc/experiments.sh"
+nb_load_modules
+cd "$NB_ROOT" || exit 1
+nb_log "job ${PBS_JOBID:-?}: $EXP on $NODES node(s)"
+nb_run_experiment "$EXP" "$NODES"
+status=$?
+nb_log "job ${PBS_JOBID:-?}: $EXP finished with status $status"
+exit $status

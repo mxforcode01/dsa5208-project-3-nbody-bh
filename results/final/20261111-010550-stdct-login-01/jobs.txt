@@ -1,0 +1,9 @@
+tests 1537867.stdct-mgmt-02
+e7a n=1 1537868.stdct-mgmt-02
+ebase n=1 1537869.stdct-mgmt-02
+e7bm n=1 1537870.stdct-mgmt-02
+e7bm n=2 1537871.stdct-mgmt-02
+e7bm n=4 1537872.stdct-mgmt-02
+e7cm n=1 1537873.stdct-mgmt-02
+e7cm n=2 1537874.stdct-mgmt-02
+e7cm n=4 1537875.stdct-mgmt-02

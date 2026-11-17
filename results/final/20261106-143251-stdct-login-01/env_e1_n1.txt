@@ -1,0 +1,12 @@
+experiment e1 on 1 node(s), 72 cores per node, 2026-11-06 14:34:02
+hosts: cn-012.stdct.loc 
+modules loaded : foss/2025b CMake/4.0.3-GCCcore-14.3.0
+c++            : /app1/ebapps/arches/flat-avx2/software/GCCcore/14.3.0/bin/g++ 14.3.0
+mpicxx         : /app1/ebapps/arches/flat-avx2/software/OpenMPI/5.0.8-GCC-14.3.0/bin/mpicxx
+mpi            : openmpi | Open MPI v5.0.8
+cmake          : cmake version 4.0.3
+CPU(s):                               72
+Model name:                           Intel(R) Xeon(R) Platinum 8452Y
+Thread(s) per core:                   1
+Core(s) per socket:                   36
+Socket(s):                            2

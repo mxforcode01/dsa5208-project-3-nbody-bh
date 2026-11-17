@@ -1,0 +1,27 @@
+build/
+build-*/
+*.bin
+test_io_tmp.*
+__pycache__/
+.vscode/
+build-hpc/
+build-hpc.log
+results/hpc/*-local/
+results/hpc/*.tar.gz
+build-gpu/
+/dsa5208-project-3-nbody-*.tar.gz
+SOURCE_VERSION
+
+# Public repository: results/final holds CSVs, figures and tables only (no logs, no copies,
+# no files with machine paths or user IDs)
+results/final/**/logs/
+results/final/**/pbs/
+results/final/*.tar.gz
+results/final/_superseded/
+results/final/20261110-234519-stdct-login-01/
+results/final/**/run_env.sh
+results/final/**/gpu_env.sh
+results/final/**/tests.log
+results/final/**/build.log
+results/final/**/failures.txt
+results/final/tables/tables.pkl

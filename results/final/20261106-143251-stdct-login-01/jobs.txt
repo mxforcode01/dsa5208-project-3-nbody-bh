@@ -1,0 +1,5 @@
+tests 1525713.stdct-mgmt-02
+e1 n=1 1525714.stdct-mgmt-02
+e2 n=1 1525715.stdct-mgmt-02
+e3 n=1 1525716.stdct-mgmt-02
+e4 n=1 1525717.stdct-mgmt-02

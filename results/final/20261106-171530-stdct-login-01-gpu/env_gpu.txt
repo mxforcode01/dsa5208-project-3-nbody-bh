@@ -1,0 +1,9 @@
+modules loaded : nvhpc/26.1 CMake/4.0.3-GCCcore-14.3.0
+c++            : /app1/ebapps/arches/flat-avx2/software/GCCcore/14.3.0/bin/g++ 14.3.0
+mpicxx         : /cm/shared/apps/nvhpc/26.1/Linux_x86_64/26.1/comm_libs/mpi/bin/mpicxx
+mpi            : openmpi | mpirun (Open MPI) 4.1.9a1
+cmake          : cmake version 4.0.3
+GPU 0: NVIDIA A40 (UUID: GPU-171da010-aea9-fa0b-93c3-829bef082c26)
+GPU 1: NVIDIA A40 (UUID: GPU-e8f00b16-0c01-0f26-fd94-d54a1ddbdddc)
+hosts: gn-a40-022.stdct.loc 
+CUDA_VISIBLE_DEVICES=GPU-e8f00b16-0c01-0f26-fd94-d54a1ddbdddc,GPU-171da010-aea9-fa0b-93c3-829bef082c26

@@ -1,0 +1,3 @@
+N,ranks x threads,dt,steps,simulated time,s per force eval,wall time (s),"rel. energy drift, end","rel. energy drift, max over run","rel. momentum drift, max over run",diagnostic points,energy error ratio vs largest dt
+1000000,64 x 4,0.001,1000,1.0,0.20223252626973764,202.43475879600737,5.786729308723369e-06,4.978e-05,6.249e-06,101,1.0
+1000000,64 x 4,0.0005,2000,1.0,0.19898704385656263,398.1730747569818,5.342307385435461e-06,4.925e-05,6.272e-06,201,1.010761421319797
