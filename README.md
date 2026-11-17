@@ -7,20 +7,20 @@ How to build and run the code on the NUS Vanda cluster.
 On your own computer:
 
 ```bash
-git clone https://github.com/mxforcode01/dsa5208-project-3-nbody.git
+git clone https://github.com/mxforcode01/dsa5208-project-3-nbody-bh.git
 ```
 
-This creates the folder `dsa5208-project-3-nbody`. Zip it as `dsa5208-project-3-nbody.zip`:
+This creates the folder `dsa5208-project-3-nbody-bh`. Zip it as `dsa5208-project-3-nbody.zip`:
 
 - Windows: right-click the folder → *Send to* → *Compressed (zipped) folder*.
-- macOS / Linux: `zip -r dsa5208-project-3-nbody.zip dsa5208-project-3-nbody`
+- macOS / Linux: `zip -r dsa5208-project-3-nbody-bh.zip dsa5208-project-3-nbody-bh`
 
 ## 2. Copy the zip to Vanda and log in
 
 From your own computer (on the NUS network or VPN), replace `<nusnet-id>` with your NUSNET ID:
 
 ```bash
-scp dsa5208-project-3-nbody.zip <nusnet-id>@vanda.nus.edu.sg:~
+scp dsa5208-project-3-nbody-bh.zip <nusnet-id>@vanda.nus.edu.sg:~
 ssh <nusnet-id>@vanda.nus.edu.sg
 ```
 
@@ -28,8 +28,8 @@ On Vanda:
 
 ```bash
 cd ~
-unzip dsa5208-project-3-nbody.zip
-cd dsa5208-project-3-nbody
+unzip dsa5208-project-3-nbody-bh.zip
+cd dsa5208-project-3-nbody-bh
 ```
 
 Keep the folder in a path **without spaces** (your home directory is fine).
@@ -45,7 +45,7 @@ qsub -I -l select=1:ncpus=8:mpiprocs=8 -l walltime=01:00:00
 When the session starts:
 
 ```bash
-cd ~/dsa5208-project-3-nbody
+cd ~/dsa5208-project-3-nbody-bh
 export NB_MODULES="foss/2025b CMake/4.0.3-GCCcore-14.3.0"
 ./scripts/hpc/run_all.sh --local --tests-only
 ```
