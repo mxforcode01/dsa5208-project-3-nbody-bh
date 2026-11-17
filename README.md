@@ -70,7 +70,7 @@ Each run prints the energy and momentum drift, the time of every phase and the i
 
 ## 5. Run the full experiments (batch jobs)
 
-From the **login node**, in `~/dsa5208-project-3-nbody`:
+From the **login node**, in `~/dsa5208-project-3-nbody-bh`:
 
 ```bash
 export CORES_PER_NODE=72 MEM_PER_NODE=500gb
@@ -95,7 +95,7 @@ its own folder, `build-gpu/`. On an interactive GPU node:
 
 ```bash
 qsub -I -l select=1:ngpus=1:ncpus=8:mpiprocs=8 -l walltime=01:00:00
-cd ~/dsa5208-project-3-nbody
+cd ~/dsa5208-project-3-nbody-bh
 export NB_GPU_MODULES="nvhpc/26.1 CMake/4.0.3-GCCcore-14.3.0"
 ./scripts/hpc/run_gpu.sh --local
 exit
