@@ -10,7 +10,7 @@ On your own computer:
 git clone https://github.com/mxforcode01/dsa5208-project-3-nbody-bh.git
 ```
 
-This creates the folder `dsa5208-project-3-nbody-bh`. Zip it as `dsa5208-project-3-nbody.zip`:
+This creates the folder `dsa5208-project-3-nbody-bh`. Zip it as `dsa5208-project-3-nbody-bh.zip`:
 
 - Windows: right-click the folder → *Send to* → *Compressed (zipped) folder*.
 - macOS / Linux: `zip -r dsa5208-project-3-nbody-bh.zip dsa5208-project-3-nbody-bh`
