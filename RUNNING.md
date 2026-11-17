@@ -11,19 +11,19 @@ and cores per node are detected, or can be set by hand (Section 5).
 ## 1. Build, test and submit
 
 Vanda needs two settings on every submission (`CORES_PER_NODE` and `MEM_PER_NODE`), and its login
-node should not compile. With the code unpacked in `~/dsa5208-project-3-nbody` (a path **without
+node should not compile. With the code unpacked in `~/dsa5208-project-3-nbody-bh` (a path **without
 spaces**: PBS cannot pass such paths):
 
 ```bash
 # Build and test on a compute node
 qsub -I -l select=1:ncpus=8:mpiprocs=8 -l walltime=01:00:00
-cd ~/dsa5208-project-3-nbody
+cd ~/dsa5208-project-3-nbody-bh
 export NB_MODULES="foss/2025b CMake/4.0.3-GCCcore-14.3.0"
 ./scripts/hpc/run_all.sh --local --tests-only     # expect: 100% tests passed, 0 tests failed out of 15
 exit
 
 # Submit from the login node
-cd ~/dsa5208-project-3-nbody
+cd ~/dsa5208-project-3-nbody-bh
 export CORES_PER_NODE=72 MEM_PER_NODE=500gb
 export NB_MODULES="foss/2025b CMake/4.0.3-GCCcore-14.3.0"
 ./scripts/hpc/run_all.sh --no-build --dry-run       # prints the jobs it would submit, submits nothing
@@ -87,13 +87,13 @@ SDK (`nvc++`, OpenMP target offload) with the Open MPI that ships with it. On Va
 ```bash
 # Small check on an interactive GPU node (builds, runs test_gpu_offload, two small sizes)
 qsub -I -l select=1:ngpus=1:ncpus=8:mpiprocs=8 -l walltime=01:00:00
-cd ~/dsa5208-project-3-nbody
+cd ~/dsa5208-project-3-nbody-bh
 export NB_GPU_MODULES="nvhpc/26.1 CMake/4.0.3-GCCcore-14.3.0"
 ./scripts/hpc/run_gpu.sh --local
 exit
 
 # Full experiment, from the login node: one job with 2 GPUs (NVIDIA A40 in our runs)
-cd ~/dsa5208-project-3-nbody
+cd ~/dsa5208-project-3-nbody-bh
 export NB_GPU_MODULES="nvhpc/26.1 CMake/4.0.3-GCCcore-14.3.0"
 ./scripts/hpc/run_gpu.sh
 ```

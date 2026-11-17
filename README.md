@@ -121,7 +121,7 @@ The program stops with an error if the tree walks did not run on a GPU.
 
 ## 7. Tables and figures
 
-On any machine with Python 3, pandas, matplotlib and openpyxl, from the `dsa5208-project-3-nbody`
+On any machine with Python 3, pandas, matplotlib and openpyxl, from the `dsa5208-project-3-nbody-bh`
 folder:
 
 ```bash

@@ -9,7 +9,7 @@ build-hpc.log
 results/hpc/*-local/
 results/hpc/*.tar.gz
 build-gpu/
-/dsa5208-project-3-nbody-*.tar.gz
+/dsa5208-project-3-nbody-bh-*.tar.gz
 SOURCE_VERSION
 
 # Public repository: results/final holds CSVs, figures and tables only (no logs, no copies,

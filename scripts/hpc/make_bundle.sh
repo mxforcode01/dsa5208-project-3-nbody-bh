@@ -8,8 +8,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 hash=$(git rev-parse --short HEAD)
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
-git -c core.autocrlf=false archive --prefix=dsa5208-project-3-nbody/ HEAD | tar -x -C "$tmp"
-printf '%s\n' "$hash" >"$tmp/dsa5208-project-3-nbody/SOURCE_VERSION"
-out="dsa5208-project-3-nbody-$hash.tar.gz"
-tar -czf "$out" -C "$tmp" dsa5208-project-3-nbody
+git -c core.autocrlf=false archive --prefix=dsa5208-project-3-nbody-bh/ HEAD | tar -x -C "$tmp"
+printf '%s\n' "$hash" >"$tmp/dsa5208-project-3-nbody-bh/SOURCE_VERSION"
+out="dsa5208-project-3-nbody-bh-$hash.tar.gz"
+tar -czf "$out" -C "$tmp" dsa5208-project-3-nbody-bh
 echo "$PWD/$out"
